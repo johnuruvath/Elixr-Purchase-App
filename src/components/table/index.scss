@@ -1,0 +1,68 @@
+table, thead, tbody, tr,th,td{
+    padding: 0;
+    margin:0;
+    border:0;
+}
+
+.table-wrap {
+    padding: 8px 25px;
+    width: 100%;
+ 
+    .material-symbols-outlined {
+        color: #004FFA;
+        cursor: pointer;
+    }
+ 
+    .table-body {
+        margin-left: 50px;
+    }
+ 
+ 
+    tr:hover {
+        background: rgb(244, 242, 242);
+    }
+ 
+    th,
+    td {
+        width: 50%;
+        padding: 5px 10px;
+        .th-div{
+            display:flex;
+            align-items: center;
+            gap: 6px;
+ 
+            .material-symbols-outlined{
+                font-size: 17px;
+ 
+            }
+        }
+    }
+ 
+    .col.col-name{
+        width: 50%;
+    }
+    .col.col-username{
+    width:auto;
+    }
+    .col.col-guid{
+        width: 100px;
+    }
+    table{
+        width: 100%;
+        table-layout: fixed;
+    }
+}
+ 
+ 
+ 
+ 
+@media screen and (max-width: 768px) {
+    .table-wrap {
+        overflow-x: auto;
+
+        td {
+            padding: 5px;
+        }
+ 
+    }
+}

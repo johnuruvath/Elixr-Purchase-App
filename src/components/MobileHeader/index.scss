@@ -1,0 +1,127 @@
+
+.mobile-header-wrap{
+    display: none;
+}
+
+.mobile-overlay-container{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .mobile-header-wrap{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        color: white;
+        position: relative;
+        margin:10px;
+       
+
+        .mobile-logo-container{
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+            align-items: center;
+            
+            img{
+                height: 40px;
+                
+            }
+        }
+
+        .mobile-menu-container{
+            .dashboard-container{
+                display: flex;
+                align-items: center;
+            }
+            .dropDown-Icon{
+                .btn-primary.dropdown-toggle{
+                    justify-content: center;
+                    align-items: center;
+                    background: transparent !important;
+                    &:after{
+                        display: none;
+                    }
+                }
+
+                .dropDown-box{
+                    width:200px;
+                    height: 170px;
+                    text-align: center;
+                 
+                    
+
+                    span{
+                        font-size:40px;
+                        color: var(--color-bg);
+                        font-weight: 600;
+                    }
+                   
+                }
+               
+            }
+            display: flex;
+            gap:10px;
+        }
+
+    }   
+    
+    
+    .mobile-overlay-container{
+        position: absolute;
+        top:0;
+        height: 100vh;
+        width:200px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        background: white; 
+        z-index: 12;
+
+        .logo-container{
+           margin: 16px;
+            img{
+                height:30px;
+                // margin:8px;
+            }
+        }
+
+            .menu-item-container{
+              
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin-left: 16px;
+           
+              .menu-item{
+                display: flex;
+                align-items: center;
+                gap:14px;
+
+
+                a{
+                    display:flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: inherit;
+                } &:hover{
+                    color: var(--color-bg);
+                }
+              }
+
+            }
+       
+    }
+    .mobile-overlay{
+        position:fixed;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.6);
+        z-index:11;
+    }
+
+}
+

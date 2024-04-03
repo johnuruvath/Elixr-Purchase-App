@@ -1,0 +1,63 @@
+
+.product-form-box {
+    background-color: var(--color-white);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+
+    .form-group{
+
+    .error-border {
+        border: none;
+        outline: none;
+        width: 100%;
+        border-bottom: 1px solid red;
+    }
+}
+.product-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.error-message{
+    width:200px;
+    position: fixed;
+    top:10px;
+    z-index: 40;
+    color:red;
+}
+.toast-container{
+    width:200px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 30;
+}
+// }
+
+
+@media screen and (max-width:1024px) {
+
+   .product-form-box {
+        width:300px;
+        padding:20px;
+        justify-content: flex-start;
+    }
+  
+}
+
+@media screen and (max-width:768px) {
+
+   .product-form-box  {
+        // border-radius: 30px 30px 0 0;
+        width: 100%;
+        flex: 1;
+    }
+
+}

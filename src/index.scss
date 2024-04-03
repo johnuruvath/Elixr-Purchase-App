@@ -1,0 +1,22 @@
+:root {
+  --color-bg: #004FFA;
+  --color-white: #fff;
+  --color-border: #C5CFDA;
+  --color-primary: #E47249;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+}
